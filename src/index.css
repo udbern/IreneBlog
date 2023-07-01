@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Montaga', sans-serif ;
+    -webkit-font-smoothing: antialiased;
+    background-color: #d6eafa;
+    
+}
+
+@layer components {
+    h1,h2,h3,h4,h5,h6{
+         @apply text-gray-900 dark:text-white;
+    }
+    
+}
+
+@layer components {
+
+    p{
+        @apply text-gray-600 dark:text-gray-200 text-sm leading-loose lg:text-base
+         lg:leading-relaxed;
+    }
+
+}
