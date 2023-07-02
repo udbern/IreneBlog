@@ -48,7 +48,7 @@ export default function Blogpost() {
               className="h-96 w-full object-cover rounded-2xl shadow"
             />
           )}
-          <h1 className="text-4xl my-8 xl:text-6xl">{blogpost.title}</h1>
+          <h1 className="text-2xl my-8 lg:text-4xl font-bold">{blogpost.title}</h1>
           <p className="font-bold text-sm mb-8">
             By {blogpost.name}{" "}
             {blogpost.publishedAt && (
@@ -59,12 +59,12 @@ export default function Blogpost() {
             )}
           </p>
 
-          <PortableText value={blogpost.body} />
+          <PortableText  value={blogpost.body} />
 
           <div className="max-w-7xl mx-auto px-5 mb-20 mt-10 flex items-end justify-end">
             <Link
               to="/blog"
-              className="bg-white dark:bg-slate-800 dark:hover:bg-slate-700 py-2 px-8 rounded shadow text-slate-800 dark:text-slate-400 tracking-wide hover:opacity-75 transition-all duration-200"
+              className=" text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:bg-slate-800 dark:hover:bg-slate-700 py-2 px-4 rounded shadow text-slate-800 dark:text-slate-400 tracking-wide hover:opacity-75 transition-all duration-200"
             >
               Read More Blog posts
             </Link>

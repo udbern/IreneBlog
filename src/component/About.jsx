@@ -8,7 +8,7 @@ import { FaWhatsappSquare } from 'react-icons/fa';
 function About() {
   return (
     <section className='mx-5 ' >
-      <div className='max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2  items-center justify-center gap-8 bg-gray-100 rounded-lg  md:place-items-center overflow-hidden shadow-md shadow-indigo-300'>
+      <div className='max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2  items-center justify-center gap-8 bg-gray-100 rounded-lg  md:place-items-center overflow-hidden shadow-md shadow-indigo-800'>
         <div className="" id="about">
           <img className="md:h-72 md:object-cover " src={Irene} alt="author.png"
             loading="lazy" />
