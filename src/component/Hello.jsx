@@ -4,7 +4,7 @@ function Hello() {
   return (
     <section className='max-w-7xl mx-auto px-4 font-Montaga'>
       <h1
-        className=" text-4xl md:text-6xl  tracking-wide   py-10 md:w-2/3 text-left     ">
+        className=" text-4xl md:text-6xl tracking-wide  py-10    ">
         Welcome to my blog, 
         an exciting place 
         to read all your  Stories and 
