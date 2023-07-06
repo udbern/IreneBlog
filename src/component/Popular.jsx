@@ -35,7 +35,7 @@ function Popular() {
     <section className='my-20 max-w-7xl mx-auto  font-body'>
       <div className='flex item-center justify-between  font-Montaga mb-4 '>
         <div>
-          <h1 className='uppercase font-semibold text-sm  md:text-2xl px-5 font-body'>latest post</h1>
+          <h1 className='uppercase font-semibold text-[12px]  md:text-2xl px-5 font-body'>latest post</h1>
         </div>
         <div>
           <Link to="/blog" className=' font-body mr-5 text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-2 px-2 md:px-4 rounded shadow test-gray-800 tracking-wide hover:opacity-75 transition-all duration-200 md:w-auto'  >view all post</Link>

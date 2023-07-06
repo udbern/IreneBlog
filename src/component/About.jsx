@@ -4,6 +4,7 @@ import { AiFillFacebook } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { FaWhatsappSquare } from 'react-icons/fa';
+import {Link} from 'react-router-dom'
 
 function About() {
   return (
@@ -19,10 +20,21 @@ function About() {
             and a passion for writing.
           </h1>
           <ul className='flex items-center justify-start gap-4 mt-4 mb-4  px-2 '>
-            <li> <AiFillFacebook className='text-2xl text-blue-gray-800 hover:text-[#4267B2] transition-all  duration-200' /> </li>
-            <li><AiFillInstagram className='text-2xl text-blue-gray-800  hover:text-pink-800  transition-all  duration-200 ' /></li>
-            <li><AiFillTwitterCircle className='text-2xl text-blue-gray-800 hover:text-[#1DA1F2] transition-all  duration-200' /></li>
-            <li>< FaWhatsappSquare className='text-2xl text-blue-gray-800 hover:text-[#25D366] transition-all  duration-200' /></li>
+            <Link to='https://www.facebook.com'>
+              <li> <AiFillFacebook className='text-2xl text-blue-gray-800 hover:text-[#4267B2] transition-all  duration-200' /> </li>
+            </Link>
+
+            <Link to='https://www.instagram.com'>
+              <li><AiFillInstagram className='text-2xl text-blue-gray-800  hover:text-pink-800  transition-all  duration-200 ' /></li>
+            </Link>
+
+            <Link to='https://www.twitter.com'>
+              <li><AiFillTwitterCircle className='text-2xl text-blue-gray-800 hover:text-[#1DA1F2] transition-all  duration-200' /></li>
+            </Link>
+
+            <Link to='https://www.whatsapp.com'>
+              <li>< FaWhatsappSquare className='text-2xl text-blue-gray-800 hover:text-[#25D366] transition-all  duration-200' /></li>
+            </Link>
           </ul>
         </div>
       </div>

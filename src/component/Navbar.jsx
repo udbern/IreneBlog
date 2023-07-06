@@ -1,5 +1,6 @@
 import { useLocation, useNavigate,} from "react-router-dom";
-import { HiMenu } from 'react-icons/hi';
+
+import Hamburger from "./Hamburger";
 
 export default function Navbar() {
     const location = useLocation();
@@ -19,8 +20,11 @@ export default function Navbar() {
                     <div className="cursor-pointer">
                         <h1 className="tracking-wide text-gray-100 " onClick={() =>navigate("/")}>Irene</h1>
                     </div>
-                    <div className="flex">
-                        <HiMenu className="md:hidden text-gray-100 text-2xl cursor-pointer "/>
+                    <div className=" block md:hidden ">
+                        <Hamburger className="md:hidden text-gray-100 text-2xl cursor-pointer " />
+                    </div>
+                    <div className=" hidden md:flex">
+                        
                         <ul className="space-x-5 hidden md:flex tracking-wider">
                             <li
                                 className={` font-body cursor-pointer font-semibold text-gray-100 border-b-2 b border-b-transparent ${pathMatchRoute("/") && "text-white !border-b-gray-100"}`} onClick={() => navigate("/")}
