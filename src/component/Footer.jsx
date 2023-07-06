@@ -7,7 +7,7 @@ function Footer() {
         <h3 className="text-xl ">share on social media</h3>
       <ul className='text-[12px] md:text-sm text-gray-800 mt-4    flex justify-center flex-wrap gap-4 '>
         <lInk to="https//www.facebook.com">
-          <li className=' cursor-pointer'>Facebook</li>
+          <li className=' text-[12px]  cursor-pointer'>Facebook</li>
         </lInk>
         <li className=''>Facebook</li>
         <li className=''>Instagram</li>
