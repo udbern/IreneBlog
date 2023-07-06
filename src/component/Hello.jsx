@@ -1,15 +1,18 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 function Hello() {
   return (
     <section className='max-w-7xl mx-auto px-4 font-Montaga'>
-      <h1
-        className=" text-4xl md:text-6xl tracking-wide  py-10    ">
+      <motion.h1
+        className=" text-4xl md:text-6xl tracking-wide  py-10    "
+        initial={{ x: -200 }}
+        animate={{ x: 0 }}>
         Welcome to my blog, 
         an exciting place 
         to read all your  Stories and 
         articles in just one click
-      </h1>
+      </motion.h1>
     </section>
   )
 }

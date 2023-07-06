@@ -22,10 +22,10 @@ const Hamburger = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('click', handleOutsideClick);
+    document.addEventListener('mousedown', handleOutsideClick);
 
     return () => {
-      document.removeEventListener('click', handleOutsideClick);
+      document.removeEventListener('mousedown', handleOutsideClick);
     };
   }, []);
 
@@ -78,5 +78,3 @@ const Hamburger = () => {
 };
 
 export default Hamburger;
-
-
