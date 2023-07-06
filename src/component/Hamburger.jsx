@@ -46,7 +46,7 @@ const Hamburger = () => {
         )}
       </div>
       {isOpen && (
-        <motion.div className='absolute w-60 top-16 right-0 h-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
+        <motion.div className='absolute w-full top-16 right-0 h-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
           initial={{ y: -250 }}
           animate={{ y: 0 }}>
           <ul className='grid items-center justify-start mt-20 p-5 space-y-5 text-white'>
