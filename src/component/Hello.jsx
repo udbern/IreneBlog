@@ -8,7 +8,7 @@ function Hello() {
         className=" text-4xl md:text-6xl tracking-wide  py-10    "
         initial={{ x: -200 }}
         animate={{ x: 0 }}
-        transition={{ duration: 5 }}>
+        transition={{ duration: 1 }}>
         Welcome to my blog, 
         an exciting place 
         to read all your  Stories and 
