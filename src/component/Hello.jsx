@@ -7,7 +7,8 @@ function Hello() {
       <motion.h1
         className=" text-4xl md:text-6xl tracking-wide  py-10    "
         initial={{ x: -200 }}
-        animate={{ x: 0 }}>
+        animate={{ x: 0 }}
+        transition={{ duration: 5 }}>
         Welcome to my blog, 
         an exciting place 
         to read all your  Stories and 
