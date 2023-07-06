@@ -14,13 +14,13 @@ function About() {
             loading="lazy" />
         </div>
         <div>
-          <h1 className=" text-2xl px-2   mb-4   tracking-wide font-Montaga  ">
-            I'm Irene Fabian Ekpo , from Akwa Ibom State Nigeria , a fascinating individual with a wealth of life experience
+          <h1 className=" text-2xl px-2   mb-4   tracking-wide  ">
+            I'm Irene Fabian Ekpo, from Akwa Ibom State Nigeria, a fascinating individual with a wealth of life experience
             and a passion for writing.
           </h1>
           <ul className='flex items-center justify-start gap-4 mt-4 mb-4  px-2 '>
             <li> <AiFillFacebook className='text-2xl text-blue-gray-800 hover:text-[#4267B2] transition-all  duration-200' /> </li>
-            <li><AiFillInstagram className='text-2xl text-blue-gray-800 hover:text-[#E1306C]  transition-all  duration-200 ' /></li>
+            <li><AiFillInstagram className='text-2xl text-blue-gray-800  hover:text-pink-800  transition-all  duration-200 ' /></li>
             <li><AiFillTwitterCircle className='text-2xl text-blue-gray-800 hover:text-[#1DA1F2] transition-all  duration-200' /></li>
             <li>< FaWhatsappSquare className='text-2xl text-blue-gray-800 hover:text-[#25D366] transition-all  duration-200' /></li>
           </ul>

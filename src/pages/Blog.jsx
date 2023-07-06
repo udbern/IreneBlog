@@ -32,7 +32,7 @@ export default function Blog() {
   return (
     <>
       <div className='max-w-7xl mx-auto px-5'>
-      <h1 className='text-2xl lg:text-3xl mb-6 capitalize mt-5 '>all blog post</h1>
+      <h1 className='text-xl lg:text-3xl mb-6 capitalize mt-5  '>all blog post</h1>
     </div>
       <section className=' grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 px-5 mt-10 max-w-7xl mx-auto  '>
         {stories.map((story) => (
