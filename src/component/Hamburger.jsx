@@ -1,33 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { HiMenu, HiMenuAlt3 } from 'react-icons/hi';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { motion } from "framer-motion"
 
 const Hamburger = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
-
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
-
-  const handleOutsideClick = (e) => {
-    if (menuRef.current && !menuRef.current.contains(e.target)) {
-      setIsOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener('mousedown', handleOutsideClick);
-
-    return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
-    };
-  }, []);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -38,40 +18,42 @@ const Hamburger = () => {
 
   return (
     <div className=''>
-      <div className='md:hidden relative' ref={menuRef}>
+      <div className='md:hidden relative'>
         {isOpen ? (
-          <HiMenuAlt3 className='cursor-pointer' onClick={handleClick} />
+          <HiMenuAlt3
+            className='cursor-pointer'
+            onClick={handleClick}
+          />
         ) : (
-          <HiMenu className='cursor-pointer' onClick={handleClick} />
+          <HiMenu
+            className='cursor-pointer'
+            onClick={handleClick}
+          />
         )}
       </div>
       {isOpen && (
-        <motion.div className='absolute w-60 top-16 right-0 h-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
-          initial={{ y: -250 }}
-          animate={{ y: 0 }}>
-          <ul className='grid items-center justify-center p-5 space-y-5 text-white'>
+        <div className='absolute w-[70%]  top-16 right-0 h-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
+          <ul className='grid p-5 space-y-5 text-white mt-20'>
             <li
-              className={`font-body cursor-pointer font-semibold text-gray-100 border-b-2 b border-b-transparent ${pathMatchRoute('/') ? 'text-white !border-b-gray-100' : ''
-                }`}
+              className={`font-body cursor-pointer font-semibold text-gray-100  ${pathMatchRoute("/") && "text-white"}`}
               onClick={() => {
-                navigate('/');
-                handleLinkClick();
+                navigate("/");
+                handleClick(); 
               }}
             >
               Home
             </li>
             <li
-              className={`cursor-pointer font-semibold text-gray-100 border-b-2 b border-b-transparent ${pathMatchRoute('/Blog') ? '!text-white !border-b-gray-100' : ''
-                }`}
+              className={`cursor-pointer font-semibold text-gray-100  ${pathMatchRoute("/Blog") && "!text-white "}`}
               onClick={() => {
-                navigate('/Blog');
-                handleLinkClick();
+                navigate("/Blog");
+                handleClick(); 
               }}
             >
               Blog
             </li>
           </ul>
-        </motion.div>
+        </div>
       )}
     </div>
   );

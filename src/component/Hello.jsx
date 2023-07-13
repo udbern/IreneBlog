@@ -6,7 +6,7 @@ function Hello() {
     <section className='max-w-7xl mx-auto px-4 font-Montaga'>
       <motion.h1
         className=" text-4xl md:text-6xl tracking-wide  py-10    "
-        initial={{ x: -200 }}
+        initial={{ x: -200  }}
         animate={{ x: 0 }}>
         Welcome to my blog, 
         an exciting place 
