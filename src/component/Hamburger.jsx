@@ -32,13 +32,13 @@ const Hamburger = () => {
         )}
       </div>
       {isOpen && (
-        <div className='absolute w-[70%]  top-16 right-0 h-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
+        <div className='absolute w-[60%]  top-16 right-0 h-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
           <ul className='grid p-5 space-y-5 text-white mt-20'>
             <li
-              className={`font-body cursor-pointer font-semibold text-gray-100  ${pathMatchRoute("/") && "text-white"}`}
+              className={`font-body cursor-pointer font-semibold text-gray-100   ${pathMatchRoute("/") && "text-white "}`}
               onClick={() => {
                 navigate("/");
-                handleClick(); 
+                handleClick(); // Close menu after clicking
               }}
             >
               Home
@@ -47,7 +47,7 @@ const Hamburger = () => {
               className={`cursor-pointer font-semibold text-gray-100  ${pathMatchRoute("/Blog") && "!text-white "}`}
               onClick={() => {
                 navigate("/Blog");
-                handleClick(); 
+                handleClick(); // Close menu after clicking
               }}
             >
               Blog
